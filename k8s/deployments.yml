@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -28,7 +28,7 @@ spec:
             cpu: "250m"
           limits:
             memory: "128Mi"
-            cpu: "500m"
+            cpu: "50m"
         readinessProbe:
           httpGet:
             path: /
